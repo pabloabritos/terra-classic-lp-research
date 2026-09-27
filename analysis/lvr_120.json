@@ -1,0 +1,282 @@
+[
+ {
+  "pool": "JURIS/USDC luncswap (40d)",
+  "days": 40.12236111111111,
+  "sigma_year": 0.8055096634138976,
+  "fees": 0.0010353359151358266,
+  "lvr": 0.00891548842785587,
+  "turnover_day": 0.012651028358253918,
+  "lp_fee_rate": 0.002039712550134991,
+  "breakeven_turnover_day": 0.10894058177600477
+ },
+ {
+  "pool": "LUNC/USDC Terraswap",
+  "days": 120,
+  "sigma_year": 0.6535523557978359,
+  "fees": 0.005293245357100407,
+  "lvr": 0.01755331568913292,
+  "turnover_day": 0.014479482082566688,
+  "lp_fee_rate": 0.0030464057847031465,
+  "breakeven_turnover_day": 0.048016463032362636
+ },
+ {
+  "pool": "USDC/LUNC Garuda DeFi",
+  "days": 120,
+  "sigma_year": 0.6463544870605961,
+  "fees": 0.0030061104390719517,
+  "lvr": 0.01716879957301505,
+  "turnover_day": 0.012595540963418838,
+  "lp_fee_rate": 0.0019888721253302935,
+  "breakeven_turnover_day": 0.0719369173879719
+ },
+ {
+  "pool": "JURIS/LUNC Terraport V2",
+  "days": 120,
+  "sigma_year": 1.9798294275241106,
+  "fees": 0.013273466092030173,
+  "lvr": 0.1610845710448129,
+  "turnover_day": 0.05068305189199452,
+  "lp_fee_rate": 0.002182430088647763,
+  "breakeven_turnover_day": 0.6150810659896905
+ },
+ {
+  "pool": "LUNC/USDC luncswap (37d)",
+  "days": 36.706875,
+  "sigma_year": 0.6000718504774482,
+  "fees": 0.002070205743265996,
+  "lvr": 0.0045265890675658125,
+  "turnover_day": 0.027392896554909354,
+  "lp_fee_rate": 0.0020588662701882957,
+  "breakeven_turnover_day": 0.059895682580222605
+ },
+ {
+  "pool": "LUNC/TERRA Terraport V2",
+  "days": 120,
+  "sigma_year": 1.0791800657953083,
+  "fees": 0.007861502684149091,
+  "lvr": 0.0478614910031493,
+  "turnover_day": 0.02927833031139733,
+  "lp_fee_rate": 0.002237577131999453,
+  "breakeven_turnover_day": 0.1782489428657939
+ },
+ {
+  "pool": "GRDX/LUNC Garuda DeFi",
+  "days": 120,
+  "sigma_year": 0.5153728872086881,
+  "fees": 0.004468926058527112,
+  "lvr": 0.010915447104239145,
+  "turnover_day": 0.01850133514714313,
+  "lp_fee_rate": 0.0020128844859867573,
+  "breakeven_turnover_day": 0.0451899052505248
+ },
+ {
+  "pool": "JURIS/TERRA Terraport V2",
+  "days": 120,
+  "sigma_year": 1.21976679609984,
+  "fees": 0.005676335951639189,
+  "lvr": 0.061143741241137056,
+  "turnover_day": 0.020854113319743628,
+  "lp_fee_rate": 0.0022682719169943954,
+  "breakeven_turnover_day": 0.224634080769574
+ },
+ {
+  "pool": "USTC/LUNC Terraswap",
+  "days": 120,
+  "sigma_year": 0.4396376777775363,
+  "fees": 0.012775825927968887,
+  "lvr": 0.007943066618696912,
+  "turnover_day": 0.030568009454694674,
+  "lp_fee_rate": 0.0034828965956779476,
+  "breakeven_turnover_day": 0.01900493454345288
+ },
+ {
+  "pool": "IBC-2E13/USDC luncswap (35d)",
+  "days": 35.365011574074074,
+  "sigma_year": 0.3476099855525227,
+  "fees": 0.0010266007721455583,
+  "lvr": 0.0014634417488804442,
+  "turnover_day": 0.006539116766243375,
+  "lp_fee_rate": 0.004439240659513921,
+  "breakeven_turnover_day": 0.009321653301043687
+ },
+ {
+  "pool": "SMT/LUNC Garuda DeFi",
+  "days": 120,
+  "sigma_year": 0.12517281173524009,
+  "fees": 7.4199579225942e-05,
+  "lvr": 0.000643899977987912,
+  "turnover_day": 0.0003080653628639632,
+  "lp_fee_rate": 0.00200713842391913,
+  "breakeven_turnover_day": 0.00267337473387708
+ },
+ {
+  "pool": "LUNC/JMC Terraport V3",
+  "days": 120,
+  "sigma_year": 0.68514088338371,
+  "fees": 0.0005026683826425682,
+  "lvr": 0.01929115192125249,
+  "turnover_day": 0.0019921356056996323,
+  "lp_fee_rate": 0.002102719903556434,
+  "breakeven_turnover_day": 0.07645316861835479
+ },
+ {
+  "pool": "SELE/LUNC Terraport V3",
+  "days": 120,
+  "sigma_year": 0.67468869612985,
+  "fees": 0.001521971458504634,
+  "lvr": 0.018707048082961527,
+  "turnover_day": 0.006181144365632416,
+  "lp_fee_rate": 0.002051900867751527,
+  "breakeven_turnover_day": 0.07597446339054345
+ },
+ {
+  "pool": "GRDX/USTC Garuda DeFi",
+  "days": 120,
+  "sigma_year": 0.5106069813140587,
+  "fees": 0.0021600249122364357,
+  "lvr": 0.010714499563013239,
+  "turnover_day": 0.008942160842313354,
+  "lp_fee_rate": 0.0020129594982003936,
+  "breakeven_turnover_day": 0.04435633028795045
+ },
+ {
+  "pool": "LUNC/ROTTI Terraport V2",
+  "days": 120,
+  "sigma_year": 0.20234179922112291,
+  "fees": 0.00039009339716700175,
+  "lvr": 0.001682556316933201,
+  "turnover_day": 0.001455132967355579,
+  "lp_fee_rate": 0.0022340077385729715,
+  "breakeven_turnover_day": 0.006276299942482056
+ },
+ {
+  "pool": "LUNC/BLAME Terraport V3",
+  "days": 120,
+  "sigma_year": 0.817762846984769,
+  "fees": 0.0005686868626393338,
+  "lvr": 0.02748230440720417,
+  "turnover_day": 0.0020583556316605242,
+  "lp_fee_rate": 0.0023023510202840923,
+  "breakeven_turnover_day": 0.09947188824626267
+ },
+ {
+  "pool": "LUNC/FUN Terraport V2",
+  "days": 120,
+  "sigma_year": 0.3006026899106607,
+  "fees": 0.0004404936151471972,
+  "lvr": 0.003713505911569514,
+  "turnover_day": 0.0016385857416626297,
+  "lp_fee_rate": 0.0022402124178756734,
+  "breakeven_turnover_day": 0.013813816203089203
+ },
+ {
+  "pool": "LUNC/RAKOFF Terraport V3",
+  "days": 120,
+  "sigma_year": 0.011148261121325108,
+  "fees": 3.7068306224519176e-06,
+  "lvr": 5.1075503847636566e-06,
+  "turnover_day": 1.541954117118803e-05,
+  "lp_fee_rate": 0.0020033187008715197,
+  "breakeven_turnover_day": 2.1246205036928966e-05
+ },
+ {
+  "pool": "LUNC/BLEEVE Terraport V3",
+  "days": 120,
+  "sigma_year": 0.1030518201939664,
+  "fees": 0.0001415403892004452,
+  "lvr": 0.00043642510871053075,
+  "turnover_day": 0.0005858520863128227,
+  "lp_fee_rate": 0.0020133123545918955,
+  "breakeven_turnover_day": 0.001806414140173642
+ },
+ {
+  "pool": "USTC/TERRA Terraport V2",
+  "days": 120,
+  "sigma_year": 1.0213759799827677,
+  "fees": 0.005723939825905244,
+  "lvr": 0.04287159832133258,
+  "turnover_day": 0.02103144221868893,
+  "lp_fee_rate": 0.002268008919845911,
+  "breakeven_turnover_day": 0.1575228898873602
+ },
+ {
+  "pool": "LUNC/USTC Terraport V2",
+  "days": 120,
+  "sigma_year": 0.42759487304898,
+  "fees": 0.00236883182799974,
+  "lvr": 0.00751386474484,
+  "turnover_day": 0.008483871787320392,
+  "lp_fee_rate": 0.0023267990993020506,
+  "breakeven_turnover_day": 0.02691059127499042
+ },
+ {
+  "pool": "ALPHA/LUNC Garuda DeFi",
+  "days": 120,
+  "sigma_year": 0.24078248709613503,
+  "fees": 0.0002263856365409822,
+  "lvr": 0.0023825838120082373,
+  "turnover_day": 0.0009367573847096348,
+  "lp_fee_rate": 0.0020139120352487233,
+  "breakeven_turnover_day": 0.009858854186556623
+ },
+ {
+  "pool": "ZANKA/LUNC Garuda DeFi",
+  "days": 120,
+  "sigma_year": 0.08411324697567245,
+  "fees": 0.00015123428188612564,
+  "lvr": 0.0002907549993201563,
+  "turnover_day": 0.0006303537751736087,
+  "lp_fee_rate": 0.0019993307441321805,
+  "breakeven_turnover_day": 0.001211884694305377
+ },
+ {
+  "pool": "LUNC/PEAS Terraport V3",
+  "days": 120,
+  "sigma_year": 0.7481033829813148,
+  "fees": 0.000814208079046308,
+  "lvr": 0.022999671436770733,
+  "turnover_day": 0.0031935715501134865,
+  "lp_fee_rate": 0.0021246016314069387,
+  "breakeven_turnover_day": 0.09021170171691612
+ },
+ {
+  "pool": "LTRN/LUNC Garuda DeFi",
+  "days": 120,
+  "sigma_year": 0.309476517641591,
+  "fees": 0.0002906606995163319,
+  "lvr": 0.003935988286502712,
+  "turnover_day": 0.0012153717708511863,
+  "lp_fee_rate": 0.0019929477992343546,
+  "breakeven_turnover_day": 0.016457983696373572
+ },
+ {
+  "pool": "TERRA/USDC luncswap (36d)",
+  "days": 35.598252314814815,
+  "sigma_year": 0.7288016360053738,
+  "fees": 0.00135024085203872,
+  "lvr": 0.006475368722998385,
+  "turnover_day": 0.017790883921359458,
+  "lp_fee_rate": 0.002131989397378358,
+  "breakeven_turnover_day": 0.0853199880043048
+ },
+ {
+  "pool": "LUNC/axlUSDC Terraport V2",
+  "days": 120,
+  "sigma_year": 0.6326321365477803,
+  "fees": 0.002532396571122142,
+  "lvr": 0.01644753781615107,
+  "turnover_day": 0.009487582165293279,
+  "lp_fee_rate": 0.0022243079840245936,
+  "breakeven_turnover_day": 0.06162043031765549
+ },
+ {
+  "pool": "TERRA/USDC Terraport V3",
+  "days": 120,
+  "sigma_year": 0.9935417744111443,
+  "fees": 0.00544542462943487,
+  "lvr": 0.04056679140411146,
+  "turnover_day": 0.0212489417231874,
+  "lp_fee_rate": 0.0021355669929249074,
+  "breakeven_turnover_day": 0.15829828619483124
+ }
+]

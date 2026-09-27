@@ -1,0 +1,39 @@
+[
+ [
+  "Terraswap",
+  30499516,
+  "withdraw_liquidity",
+  {
+   "action": "withdraw_liquidity",
+   "refund_assets": "914616832090uluna, 49994420ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5",
+   "sender": "terra132qeqedz0yztuztj0rjav4rzlkashpsdxsmh64jpgp2ul0wdlkzquzvln6",
+   "withdrawn_share": "6585000000",
+   "msg_index": "0"
+  }
+ ],
+ [
+  "Terraport V3",
+  30499516,
+  "withdraw_liquidity",
+  {
+   "action": "withdraw_liquidity",
+   "refund_assets": "938408187064uluna, 49999256ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5",
+   "sender": "terra132qeqedz0yztuztj0rjav4rzlkashpsdxsmh64jpgp2ul0wdlkzquzvln6",
+   "withdrawn_share": "6813000000",
+   "msg_index": "0"
+  }
+ ],
+ [
+  "Garuda",
+  30499516,
+  "withdraw_liquidity",
+  {
+   "action": "withdraw_liquidity",
+   "lp_tokens_burned": "6613000000",
+   "sender": "terra132qeqedz0yztuztj0rjav4rzlkashpsdxsmh64jpgp2ul0wdlkzquzvln6",
+   "withdrawn_asset1": "49933252",
+   "withdrawn_asset2": "912060845330",
+   "msg_index": "0"
+  }
+ ]
+]

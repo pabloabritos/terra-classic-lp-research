@@ -1,0 +1,93 @@
+{
+ "pair": "terra1tafq7l35cjapjk0j70468nfmztm36k73hr3wenrjam7wpk6l6nnqryq4de",
+ "label": "SELE/LUNC",
+ "assets": [
+  "terra1v0z94pr8ynzq8zmuyv3j0eraqjs4m5zpm4ptgru459y5fye2at7q0e4jtd",
+  "uluna"
+ ],
+ "checked_swaps": 0,
+ "bad_swaps": 0,
+ "cutoff": null,
+ "cover_days": 139.59862268518518,
+ "lowest_fetched_h": 28501065,
+ "anchors": [
+  [
+   30510000,
+   {
+    "terra1v0z94pr8ynzq8zmuyv3j0eraqjs4m5zpm4ptgru459y5fye2at7q0e4jtd": [
+     450720633312,
+     450720633312
+    ],
+    "uluna": [
+     54997582257084,
+     54997582257084
+    ]
+   },
+   [
+    4833460163183,
+    4833460163183
+   ]
+  ],
+  [
+   30470000,
+   {
+    "terra1v0z94pr8ynzq8zmuyv3j0eraqjs4m5zpm4ptgru459y5fye2at7q0e4jtd": [
+     445767489735,
+     445767489735
+    ],
+    "uluna": [
+     55607232314927,
+     55607232314927
+    ]
+   },
+   [
+    4833460163183,
+    4833460163183
+   ]
+  ],
+  [
+   30430000,
+   {
+    "terra1v0z94pr8ynzq8zmuyv3j0eraqjs4m5zpm4ptgru459y5fye2at7q0e4jtd": [
+     447855802155,
+     447855802155
+    ],
+    "uluna": [
+     55347391299152,
+     55347391299152
+    ]
+   },
+   [
+    4833460163183,
+    4833460163183
+   ]
+  ]
+ ],
+ "horizons": {
+  "10": {
+   "from": "2026-09-14T02:05:40",
+   "lp_vs_hodl": -0.00037373682411245834,
+   "share_change": 0.0
+  },
+  "30": {
+   "from": "2026-08-25T02:05:40",
+   "lp_vs_hodl": -0.0027383175658312053,
+   "share_change": 0.0
+  },
+  "60": {
+   "from": "2026-07-26T02:05:40",
+   "lp_vs_hodl": -0.007748727830800162,
+   "share_change": 0.0
+  },
+  "90": {
+   "from": "2026-06-26T02:05:40",
+   "lp_vs_hodl": -0.005733568638380704,
+   "share_change": -0.1437990439897303
+  },
+  "120": {
+   "from": "2026-05-27T02:05:40",
+   "lp_vs_hodl": -0.016608412783574278,
+   "share_change": -0.19896908729966356
+  }
+ }
+}

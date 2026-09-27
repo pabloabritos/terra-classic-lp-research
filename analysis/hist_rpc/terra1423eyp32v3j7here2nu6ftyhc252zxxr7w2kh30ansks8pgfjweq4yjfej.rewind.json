@@ -1,0 +1,93 @@
+{
+ "pair": "terra1423eyp32v3j7here2nu6ftyhc252zxxr7w2kh30ansks8pgfjweq4yjfej",
+ "label": "LUNC/BLEEVE",
+ "assets": [
+  "uluna",
+  "terra1xuwhm227h520fx0zse5enze42as3n0sm2xlyctjwnh08m0kvt83ss0rmzw"
+ ],
+ "checked_swaps": 0,
+ "bad_swaps": 0,
+ "cutoff": null,
+ "cover_days": 137.1480324074074,
+ "lowest_fetched_h": 28501065,
+ "anchors": [
+  [
+   30510000,
+   {
+    "uluna": [
+     34897901335355,
+     34897901335355
+    ],
+    "terra1xuwhm227h520fx0zse5enze42as3n0sm2xlyctjwnh08m0kvt83ss0rmzw": [
+     232239043643691,
+     232239043643691
+    ]
+   },
+   [
+    89113278867764,
+    89113278867764
+   ]
+  ],
+  [
+   30470000,
+   {
+    "uluna": [
+     34412506430726,
+     34412506430726
+    ],
+    "terra1xuwhm227h520fx0zse5enze42as3n0sm2xlyctjwnh08m0kvt83ss0rmzw": [
+     235502417231951,
+     235502417231951
+    ]
+   },
+   [
+    89113278867764,
+    89113278867764
+   ]
+  ],
+  [
+   30430000,
+   {
+    "uluna": [
+     34507813868809,
+     34507813868809
+    ],
+    "terra1xuwhm227h520fx0zse5enze42as3n0sm2xlyctjwnh08m0kvt83ss0rmzw": [
+     234850678573313,
+     234850678573313
+    ]
+   },
+   [
+    89113278867764,
+    89113278867764
+   ]
+  ]
+ ],
+ "horizons": {
+  "10": {
+   "from": "2026-09-14T02:05:40",
+   "lp_vs_hodl": -0.0001080884162131257,
+   "share_change": 0.0
+  },
+  "30": {
+   "from": "2026-08-25T02:05:40",
+   "lp_vs_hodl": 3.607021503615471e-05,
+   "share_change": 0.0
+  },
+  "60": {
+   "from": "2026-07-26T02:05:40",
+   "lp_vs_hodl": 9.428463642158214e-05,
+   "share_change": 0.0
+  },
+  "90": {
+   "from": "2026-06-26T02:05:40",
+   "lp_vs_hodl": 9.716131420023366e-05,
+   "share_change": 0.0
+  },
+  "120": {
+   "from": "2026-05-27T02:05:40",
+   "lp_vs_hodl": 2.2178527113725366e-05,
+   "share_change": 0.0
+  }
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "pair": "terra16378xgjcjxtzhs37hgu5vc79awxeqazfz6whj5f600dg33m6tyyq02hzd3",
+ "label": "LUNC/PEAS",
+ "assets": [
+  "uluna",
+  "terra1d06z7c94qu5vuhnk0r3m6dyn75y259uqjjk8mf2kxx4gxmfvnavsnx2uc0"
+ ],
+ "checked_swaps": 0,
+ "bad_swaps": 0,
+ "cutoff": null,
+ "cover_days": 139.46635416666666,
+ "lowest_fetched_h": 28501065,
+ "anchors": [
+  [
+   30510000,
+   {
+    "uluna": [
+     27292374510322,
+     27292374510322
+    ],
+    "terra1d06z7c94qu5vuhnk0r3m6dyn75y259uqjjk8mf2kxx4gxmfvnavsnx2uc0": [
+     297575109617374,
+     297575109617374
+    ]
+   },
+   [
+    89246166076590,
+    89246166076590
+   ]
+  ],
+  [
+   30470000,
+   {
+    "uluna": [
+     24304920540702,
+     24304920540702
+    ],
+    "terra1d06z7c94qu5vuhnk0r3m6dyn75y259uqjjk8mf2kxx4gxmfvnavsnx2uc0": [
+     334073094775302,
+     334073094775302
+    ]
+   },
+   [
+    89246166076590,
+    89246166076590
+   ]
+  ],
+  [
+   30430000,
+   {
+    "uluna": [
+     24304920540702,
+     24304920540702
+    ],
+    "terra1d06z7c94qu5vuhnk0r3m6dyn75y259uqjjk8mf2kxx4gxmfvnavsnx2uc0": [
+     334073094775302,
+     334073094775302
+    ]
+   },
+   [
+    89246166076590,
+    89246166076590
+   ]
+  ]
+ ],
+ "horizons": {
+  "10": {
+   "from": "2026-09-14T02:05:40",
+   "lp_vs_hodl": -0.006516873291298797,
+   "share_change": 0.0
+  },
+  "30": {
+   "from": "2026-08-25T02:05:40",
+   "lp_vs_hodl": -0.005354430692059209,
+   "share_change": 0.0
+  },
+  "60": {
+   "from": "2026-07-26T02:05:40",
+   "lp_vs_hodl": -0.003848269877710142,
+   "share_change": 0.0
+  },
+  "90": {
+   "from": "2026-06-26T02:05:40",
+   "lp_vs_hodl": -0.010004428377387686,
+   "share_change": 0.0
+  },
+  "120": {
+   "from": "2026-05-27T02:05:40",
+   "lp_vs_hodl": -0.007100423621650198,
+   "share_change": 0.0
+  }
+ }
+}

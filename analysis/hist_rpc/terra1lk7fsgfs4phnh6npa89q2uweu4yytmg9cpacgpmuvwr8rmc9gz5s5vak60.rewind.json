@@ -1,0 +1,84 @@
+{
+ "pair": "terra1lk7fsgfs4phnh6npa89q2uweu4yytmg9cpacgpmuvwr8rmc9gz5s5vak60",
+ "label": "JURIS/USDC",
+ "assets": [
+  "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2",
+  "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+ ],
+ "checked_swaps": 1127,
+ "bad_swaps": 0,
+ "cutoff": null,
+ "cover_days": 40.12454861111111,
+ "lowest_fetched_h": 28501065,
+ "anchors": [
+  [
+   30500000,
+   {
+    "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2": [
+     11379922299501999,
+     11379922299501999
+    ],
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5": [
+     22937189618,
+     22937189618
+    ]
+   },
+   [
+    16141316836801,
+    16141316836801
+   ]
+  ],
+  [
+   30450000,
+   {
+    "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2": [
+     10606292657160832,
+     10606292657160832
+    ],
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5": [
+     24598476549,
+     24598476549
+    ]
+   },
+   [
+    16141316836801,
+    16141316836801
+   ]
+  ],
+  [
+   30400000,
+   {
+    "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2": [
+     10561711211778396,
+     10561711211778396
+    ],
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5": [
+     24700515071,
+     24700515071
+    ]
+   },
+   [
+    16141316836801,
+    16141316836801
+   ]
+  ]
+ ],
+ "horizons": {
+  "10": {
+   "from": "2026-09-14T02:05:40",
+   "lp_vs_hodl": 0.0003955482599027338,
+   "price_move": -0.0004102780387686966,
+   "il": -2.1049644138848578e-08,
+   "fees": 0.0003955693178734343,
+   "share_change": 0.0
+  },
+  "30": {
+   "from": "2026-08-25T02:05:40",
+   "lp_vs_hodl": -0.0018704634804800335,
+   "price_move": -0.1329072262985732,
+   "il": -0.0025368022057844497,
+   "fees": 0.0006680333938917649,
+   "share_change": 0.0
+  }
+ }
+}

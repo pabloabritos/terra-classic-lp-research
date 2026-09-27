@@ -1,0 +1,657 @@
+{
+ "snapshot": 30536384,
+ "min_usd": 2000,
+ "prices_usd_per_base_unit": {
+  "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5": 1e-06,
+  "uluna": 5.3084707556295256e-11,
+  "terra1pkhx09w725qw0tyzgd0f7chmqd036vkylrknx2g3yjdkg7ddyxgsd8f7v2": 8.173005431679976e-14,
+  "terra1zra7m9w59sxwxqy8lqs3yeqleedrvtgg2qf938nk2wf8pq2ejkqsn0heln": 4.343587536199385e-07,
+  "terra1r9laq5788d36gxmf8jkayln3g5szg4ql0nmccs": 9.207872021338873e-10,
+  "terra1yg3j2s986nyp5z7r2lvt0hx3r0lnd7kwvwwtsc": 5.738979933889642e-11,
+  "terra19eytmx0yd3m5udlv7rh6u429g6ddjm2cndwv5cxndcymrztx4krqz9p4t6": 8.57618555223078e-12,
+  "terra1x6e64es6yhauhvs3prvpdg2gkqdtfru840wgnhs935x8axr7zxkqzysuxz": 1.1622062914619884e-11,
+  "terra1g6fm3yu79gv0rc8067n2nnfpf0vks6n0wpzaf4u7w48tdrmj98zsy7uu00": 6.916589579481899e-11,
+  "terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw": 6.337735426901344e-10,
+  "terra1v0z94pr8ynzq8zmuyv3j0eraqjs4m5zpm4ptgru459y5fye2at7q0e4jtd": 6.486888822297244e-09,
+  "terra1vs5xa8jr5ek5shxvqz3zyyvrexfxs0myd7gqhplmz46xldg7k7lscc8fyj": 4.041894651437257e-11,
+  "terra1wvk6r3pmj0835udwns4r5e0twsclvcyuq9ucgm": 6.808678001006495e-11,
+  "ukrw": 2.634449924472925e-11,
+  "uusd": 5.476893873909093e-09,
+  "terra10quf590wyr8tuf3pp05hgwm94n3dgfnma377uwaynl3tj47df7nskwdxgs": 2.0600994365271045e-09,
+  "terra1sl0cgtanapyy449h0hlmt77s8hak7caktvky8t4ct7a7kvjtyyvqzg8rv6": 5.661927095979841e-12,
+  "terra1j9q30fspe7tn0nrxpjfnzzdha4xfkyznluwnqrgxshtyv2tfe5kswnrj6c": 6.147095242917339e-12,
+  "terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt": 5.209513232175169e-16,
+  "terra15gjgmln8xj72rf69tx2zlrtcjzzvkcrdvrvfnmxja6kacz07pg0ssflecz": 7.653320993947096e-14,
+  "terra14rfnhc2aru7jp304lht3yf903necsnrt4cxd464cftsfcksw0rtsgundnt": 4.143596805906811e-10,
+  "terra1m58hc296srr6xygrrfyu6u0e32pl8d459nfs55pmegke8zlv94rqsjz882": 2.850679989307146e-14,
+  "terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a": 2.631873597917702e-09,
+  "terra1a8rmymsc58p9jg45p8ghy2ueqhmmhsxgd2tvuxma0pxa3g40tw8s0tjg82": 1.1021842076639615e-14,
+  "terra1q2au2v9gg0yxarqr2pufusymskzpzndmrdv3yke7erd2lh3cjfuqg47rhx": 1.634602588292546e-12,
+  "terra1pcwd6q9ed5prxhq9q2l4nlwhv9uux4gfkzaxywg0ewqcvuhfcwgq8hn0vv": 6.141774196247862e-10,
+  "terra1r4lrq4c2yc5we7fk48lw4py8v6t53wl9mfzchtzudfze5tcwvx9qc3zwdy": 1.3939495093611568e-16,
+  "terra19fufgpaec6c85nrw9j2a40rshdgcm9rhn6hlj2zmx03utpqkh2ls8jnxkz": 3.681453999066238e-10,
+  "terra192dmx27220vvw2e90vcpseu90evgpu90z0l730hy4xjh60ctx9sqe9cm9m": 1.0237154348220682e-10,
+  "terra18n0kf0xurd4pwfrf363zz5s7yr2dnrsgk42az66ek8mn9q2t7slqyqllvr": 8.001731425289474e-18,
+  "terra1gpxjwzpv0pedh0eyx7zw0amlss074ptukuvnf3dweg0wthwam0jqcc9lm4": 2.7126580544074893e-12,
+  "terra1genyaw32qah4544m0sfgmchegf7emft77u7hug63cc6a72mvpntsfupzmd": 1.1965979983118789e-10,
+  "terra12j3xuxx52cg045qk37ee4k4u4fsgvyuf8d89dh7c9mr706jvxdascahqej": 3.595751491558086e-15,
+  "terra1vxhnzlr44ajzq84xra07gtvyv5saxmsyz6cd5cewqm479znvsepqzdkk05": 6.563382108284707e-11,
+  "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2": 2.349712173104559e-12,
+  "ibc/0471F1C4E7AFD3F07702BEF6DC365268D64570F7C1FDC98EA6098DD6DE59817B": 3.453219903422092e-08,
+  "ibc/E1E3674A0E4E1EF9C69646F9AF8D9497173821826074622D831BAB73CCB99A2D": 9.861023850784137e-07,
+  "terra1wx48f5g06l9qxw8k4gn3200lmseu85vkgangwyn9xdu66mtfsfxq60hkdt": 4.577901408049764e-11,
+  "terra1w6nns79ckrpmj8pue3ydatjggnfvw33vgse9pyp28payslxs8ahqj6ytqt": 5.714311646990683e-08,
+  "terra10sfn80av99qkcx3rdpm4rt9hsguadyra5ewyxr": 1.5272926755053298e-12,
+  "terra10ml4ddapu8hmca5g6e8qw8tr0cxatwtd6clpun8nueced0f5vd8sn0gwud": 1.4466499797872087e-12,
+  "terra13d6xlk4d6cfa6c5c7n2ffua5d5fk5ggfq8vsxr34xnxr07nmke0qajzu8y": 4.988097732091923e-18,
+  "terra1nv36kq4dpxf4d00w4mv4w095ek8kv48f54v46qduruy4fwd2dtzq2uk70j": 5.408614649265938e-11,
+  "terra1nuwdr5zaul2gnq88xapq8ythmaw4092kt8lxsl6jd36h47u8vpcqnrmdcm": 6.839209954194989e-12,
+  "terra15juucad3k2npsj53crl6qhra9f65s9jkas9nzpqypj38en4ht32qczde4a": 1.0259210759466055e-13,
+  "terra14nfst294yvtdhrt4hk0njyszyh08q7e0g8rwknht7gyvw24ceyeqw42npg": 6.066760871935322e-11,
+  "terra14exvtapxa3s3aw3kua8f8rfttwlfqx6xh0ccsu42z78srmphsrksrdfx9f": 3.9892705437915087e-13,
+  "terra14l6h0tc8m2f9qzudmkk88su5actfplgpwsv3lpckfkgzezm32twq92l282": 2.367785901978907e-10,
+  "terra1cvd5cgrs8rrl96hte34n57497u5f9cwuv3e6ztxgetkx4uzmcdyswv79zl": 1.0216256286728642e-06,
+  "terra1cdj2hvk7fxdryt4upw256t5wadradwxzvma37uzz0zz0mkusyn0ssgrh2l": 1.593044952505799e-15,
+  "terra1cstkhheqvklg82vm5qgyaktlulja7y0d0547mpfnf68qtesd8ams9xd4m0": 2.9792649960084473e-12,
+  "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp": 6.040988558683383e-10,
+  "terra1mkamwzk6n25kglrx95xcr798amsgg580zzvc90lljq368fn6d3ls509hzy": 5.723879538257633e-14,
+  "terra1apl7g8hcfnlfhgp6xtqmszauvfpsqvmx9sq0f85xcs39uxtw6psq7d65jg": 7.214467447657918e-08,
+  "terra17utj66xmtc05gdnkvzntpcfpryquzyuk4mcthnuldgqanjhvnzmqmfz53p": 8.635347864500486e-12,
+  "terra1le9l8gpwl2f48xluphnwkqrnhwxqt27xhducfzqvncmsh9swavlqjpy7c9": 3.0105619637689634e-06,
+  "terra1lhu9sn8g402zg8gz8wm2rrpwdseukxdgcfum92j9meucy9rz8frq95y6h2": 7.509898905132154e-07,
+  "terra1lv5ew0e3tzw9wd5gal0ugq7yrfu9tltnpd8q5pry7j6juqeg933s3amat4": 0.005683754566681721,
+  "terra1334z0pkv8gqxh9yd8wsspmvuw23kzm46epkc3y74g6hk7v80j3hq4yk7ff": 6.44180657959789e-13,
+  "terra14mw4gzskqrvnkn5x4u4ukwkggl9ucncg8v8xz3ckuc2fylt4ev7sjlpcg0": 1.3315920452549381e-12,
+  "terra1c8465efwtu0vvyldde50meshzsdk7uhxmgyrhl5gmcsp7qaxk42qjmk5uu": 2.1926194001032398e-11,
+  "terra1d06z7c94qu5vuhnk0r3m6dyn75y259uqjjk8mf2kxx4gxmfvnavsnx2uc0": 4.868712713439731e-12,
+  "terra1j9tjp5terr8n209ng8ys68rfrs8x76lrycet5rsc55yultyh9gfqeaa4wq": 8.935816466197367e-12,
+  "terra1jfm4mxtc8afqpnp556j97gsyhydel87cvm0lxvgv6l7f4kghdq7sq98xjk": 1.7431682537285632e-12,
+  "terra1ldxkxrtpd85wyfstenjzt8vgyv8vdjgd3t0nwu38sqh4wx6h2wksh9ule8": 9.901455206042253e-13,
+  "terra1peu2e6efadlrvdq70nkkkqx36nzn5ccgtjg5wwd3xry3yzd276dqnep594": 8.86614567002643e-12,
+  "terra1q39r38pqd8a4lq50eaa86j4uxnfpf6879zwlsceqee54gjqqhg9stxujas": 2.7275942947974432e-11,
+  "terra1xuwhm227h520fx0zse5enze42as3n0sm2xlyctjwnh08m0kvt83ss0rmzw": 8.068257254855245e-12,
+  "terra1y4plh8lxjy8ywf28wwuxjac0qmk20fuvg98kev2ey78gg82xafuq0nuqyy": 8.286083155669003e-11,
+  "terra1zmsv8khmsrz2xj8zuhu7r7yruf5dfsyhtqyqf5lf92f2uvz6lf9sx5sr79": 1.5753377439382342e-10,
+  "ibc/2E13104D0924DDB574E98CF01E1FD2D8913779BCB5B514B6468C6EC6037A15DC": 0.0007919133774366602,
+  "terra16hl9mwp67l8xjy8hlhasmzldlmdpw963gmpj6e2em0g7xy4el2ys6kwtlt": 6.670561234465653e-12,
+  "terra122eam0kf6mnhptpjx2ur8wxcyk527nfw57hwshwac45vr8eeeneqhsgk5p": 9.334855467106305e-09,
+  "terra16hzl7lge3jjnlazvut2ypt7upk68z5dycc9rwy608fah8q0y3fuslkenzc": 6.488799674210609e-10,
+  "terra10svrvgrj6jsumvyj039unkmrr7mhx7mqcdhf344mdxxj2s3sfa9qd4nyn5": 0.0035374423241216263,
+  "terra1ctvrh09s3q2tgxm88vt6zexle8wcf22qwhxe5qa2wchc9e2ynw3qhvksyl": 1.893207924325591e-15,
+  "terra1kgx73l7akz83755ex76m90mlsphle6y5yd7f7xmee34lr8zc57mqm29esv": 2.3101852166327926e-11,
+  "terra15ut7fz0xu8x5crj6tx7p23pz0ejdlt3vnc2h4evqhj5vj8rlelhsvez6p6": 3.4929085533760837e-15,
+  "terra1rc4ef7s6pzuf9pkg8ymnw29pjz2yfm3tjg0kleu4348c2e6upkxqdfdj5u": 5.024054244099673e-11,
+  "terra1e4lxe4fq6k9652pyu7fyrexsns3r8tlqrdky3z03ky2ptejzdajsh0xvzt": 5.465245559387831e-12,
+  "terra1ftp7z26px8l7tf4c02g54ekpnzsgtt8dl7tx2dy4072plzqemjvqtlkq3l": 2.1450433533501755e-09,
+  "terra1acyudc64qy06d42kkrh2z7v5333y0c2svs24ntxy7xazhamkykdswes2g7": 4.297285130050837e-14,
+  "terra1wwrg00jczxf4czy4jr4wc2nvgpl4un4g8fjvm2zy54neel7ygqgsmlhhvp": 4.986432064699737e-14,
+  "terra1ljyvgw50u67r3ep7pp7qexgnsgy96fl57q0suut325ehed7eal8qwdtdq4": 1.29046989523838e-09,
+  "terra1x2w89mnpzpy072azpf0g8muccnvahlewdpq0kkpf4qdhx3c6y9qqeppwyd": 9.198272530996446e-12,
+  "terra1f6z0ylpshz9j0ytjcqlmyl3fmf8v7uwa7k7ar6craz247lum3wwq6jwh3u": 1.2130423886542295e-11,
+  "terra1jk858n7t29llucje6c8dhwslrz9x424u2l6mw3hxjfljt65pcf3s9q2vzm": 3.253296371884553e-10,
+  "terra12ckccpalj2y9h54syyst4lpqp79duc9cpxfsyvne409rjw93s8qs2eneh3": 1.0821344553373636e-06,
+  "terra1gzs0926z2u6f2w9afk6ks4z9gkjpac00x60fy9yu903qjjz6nk9qmu5jx3": 6.159112889831847e-13,
+  "terra1r3eaa2tucjr3es88wzuqpgxvssqflk9cghrjmf9uneds8wljyapqwtrcp5": 3.126553058029531e-07,
+  "terra1wsmy4llflw9mc9qfysge5nnmpk5vfcrvc3hevrmaxzlr0qsyvh4q5yuhwd": 1.3808847796415746e-10,
+  "terra1lhqh7ae5ga2hlnl3n6ezgljgemwk3rvrw6sav9acwspdndz0953smclw3f": 9.477829783775869e-11,
+  "terra1hjkqa4jlywvq3hf4m68a8g86n8tapjs7x0gjvnvqlw69qxsmwl0s723gus": 4.887959927299937e-05,
+  "terra15uwstq6plhlxm3qcvh6js9sflp8vl9964f9l0mjhuv38dnjkulkq48rgfv": 4.752152672808284e-16,
+  "ueur": 2.908530656482109e-07,
+  "terra19kurhxfuf93p7ppcrgtxpdztaezssy8af29pj7un3nvn4q8te67qtmwk2l": 1.29782188054304e-13,
+  "terra1t9gw5njcx009ud2ke7txq92hx5v75arsctzch9nyxv0096987c4q9fwvzy": 1.2130736621607398e-10,
+  "terra1t4cj2tquy8qykjl2yt930mjkjl8fr29qctlch3ucpwtx2y7nr7tqmvnrap": 1.2853863578426537e-13,
+  "ibc/386A4031D68DE6370B85F9FF7E89CEF8DE7CDE01CC193CBD87BD3ED60F6662CE": 1.0585579556784503e-06,
+  "terra1dl82u2zrlqfdc9m3zz86zdt6uzu2f6rdz4pqu648m0srqunt50lq0wny6l": 9.056224184411637e-14,
+  "terra1uewxz67jhhhs2tj97pfm2egtk7zqxuhenm4y4m": 2.4052710519255766e-09,
+  "terra1jedse4gvm5p3gnt0sm5gn8zr8zsz3zf73985csr8xh8jv7nz299q26elnf": 9.42969180207183e-12,
+  "terra1t9s9y7jurjjcaxu8jf64cv709d5pld0ktq7km798jz7cvpagdf4q2edsgz": 1.6786914399372493e-11,
+  "ibc/EC029D782B5E87EF523FF6716DEF58CACD1D207602E510B6B9D0DABA21057DFB": 6.465142205793903e-07,
+  "terra1nhxvw723h4gss9uel3gknuayqxt20c2lcxqv9htghs45f3j9sz0srh67f5": 9.234503735453575e-13,
+  "ibc/062DEB569A6C19202044DD3D21B4869C783F3D66D8A62A32236C87D40C26AB22": 5.154014827447434e-16,
+  "terra1cfmkp9eutxf0qp6vguyy4jyg8ua69236kxpevu7qew6m52glsg0sjkyfr8": 2.474219687500662e-12,
+  "terra1nnmlzhgw92kwyk036r0m3j3u0ydt3enad4vtxlggly886cujq5csrs6k9u": 5.104637760311695e-09,
+  "terra16wtml2q66g82fdkx66tap0qjkahqwp4lwq3ngtygacg5q0kzycgqvhpax3": 6.847804574069189e-19,
+  "terra14mqjm7n23ky3479hmaarzqnwrlmapje08runh5m7a29rz6sunhpsn9pq27": 2.3378322402993974e-10
+ },
+ "pools": [
+  {
+   "pair": "terra1lk7fsgfs4phnh6npa89q2uweu4yytmg9cpacgpmuvwr8rmc9gz5s5vak60",
+   "dex": "luncswap",
+   "assets": [
+    "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2",
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+   ],
+   "usd": 49537,
+   "pair_type": "null",
+   "existed_at_earliest": false
+  },
+  {
+   "pair": "terra19h62lw77rluxf6yg4szcclcgk9tsalx72cv7dlzvzs8gy20g70js7c9jkc",
+   "dex": "Terraswap",
+   "assets": [
+    "uluna",
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+   ],
+   "usd": 43270,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1a29fltd5h5y8se0xanw48wkmqg7nfpmv5jsl472uun0274h8xatqd3yzfh",
+   "dex": "Terraport V3",
+   "assets": [
+    "uluna",
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+   ],
+   "usd": 42333,
+   "pair_type": "{\"custom\": \"concentrated\"}",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1vnt3tjg0v98hgp0vx8nynvklnjqzkzsqvtpzv9v56r800gdhmxwstv5y64",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5",
+    "uluna"
+   ],
+   "usd": 41889,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra13w6cruzc0xkdhpmrnspr5j282x3wyx0m4f6kjnr65tpq63usn8eqp5emy4",
+   "dex": "Terraport V2",
+   "assets": [
+    "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2",
+    "uluna"
+   ],
+   "usd": 34053,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1n49uyxf4nxztpyv6exuutsr7tavale4le9reax8k539cd5csjeyq2pyha9",
+   "dex": "luncswap",
+   "assets": [
+    "uluna",
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+   ],
+   "usd": 18282,
+   "pair_type": "null",
+   "existed_at_earliest": false
+  },
+  {
+   "pair": "terra1rlfns43umzqszm52txxmnseevffx2pe408c99m7cnvd828tdj67q9ftjs2",
+   "dex": "Terraport V2",
+   "assets": [
+    "uluna",
+    "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp"
+   ],
+   "usd": 14798,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1lhpvlec34lda370cwnf78fyapud7d4f8hjwuzjgljf4dt5vt2m5q4qzw7t",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw",
+    "uluna"
+   ],
+   "usd": 13014,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra18lzl6drsnyr6m9mplfw2fkr8kw6gsvar7wr8wzqgcx7xva58dhpsq7jgdy",
+   "dex": "Terraport V2",
+   "assets": [
+    "terra1vhgq25vwuhdhn9xjll0rhl2s67jzw78a4g2t78y5kz89q9lsdskq2pxcj2",
+    "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp"
+   ],
+   "usd": 10961,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1cf0fxnvhcmsqnw8levj3vrhrq3nxgfmc86w9d6pxyeghqyrkgj2spgqarl",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra15p8su45k45axng8ue59rl6zph4at27s49u3agr6uqrx3dhcxpg3qt0ekdt",
+    "uluna"
+   ],
+   "usd": 10714,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1l7vy20x940je7lskm6x9s839vjsmekz9k9mv7g",
+   "dex": "Terraswap",
+   "assets": [
+    "uusd",
+    "uluna"
+   ],
+   "usd": 10451,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1qynttd0rddh2pcmlqavnvx20sa8nedy3gk2s0mgtrdcdpaggnesslqag7l",
+   "dex": "luncswap",
+   "assets": [
+    "ibc/2E13104D0924DDB574E98CF01E1FD2D8913779BCB5B514B6468C6EC6037A15DC",
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+   ],
+   "usd": 10206,
+   "pair_type": "null",
+   "existed_at_earliest": false
+  },
+  {
+   "pair": "terra12rr28v7nfvldlk3ymrhhykkuarpsjcqmy3kma74y0ypzalmm6npq266p3x",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra122eam0kf6mnhptpjx2ur8wxcyk527nfw57hwshwac45vr8eeeneqhsgk5p",
+    "uluna"
+   ],
+   "usd": 7442,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra12nvlyd4d654jst5uha2t8dwl5dz4qyhp7vps0pnu50rzuyge73nq9r4apm",
+   "dex": "Terraport V2",
+   "assets": [
+    "uluna",
+    "terra15juucad3k2npsj53crl6qhra9f65s9jkas9nzpqypj38en4ht32qczde4a"
+   ],
+   "usd": 7127,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra16p0fhpm7a09t3t5xnj7ukfeats77tc25032rl6l00n4w2f7wz9xsyve64x",
+   "dex": "Terraport V3",
+   "assets": [
+    "uluna",
+    "terra1y4plh8lxjy8ywf28wwuxjac0qmk20fuvg98kev2ey78gg82xafuq0nuqyy"
+   ],
+   "usd": 7095,
+   "pair_type": "{\"custom\": \"concentrated\"}",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra13dmjw2dpj49nnazxq79p6uyfa9jd5rrte9tvcvqywmfaphvsfndqsre727",
+   "dex": "Terraport V2",
+   "assets": [
+    "uluna",
+    "terra1vxhnzlr44ajzq84xra07gtvyv5saxmsyz6cd5cewqm479znvsepqzdkk05"
+   ],
+   "usd": 6648,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra14qz98qdq4rk8d3sm0kjn9zsf6c3yfc3azyemc5j7s85t92cl0ulsvwc9d9",
+   "dex": "Terraport V2",
+   "assets": [
+    "terra1nuwdr5zaul2gnq88xapq8ythmaw4092kt8lxsl6jd36h47u8vpcqnrmdcm",
+    "uluna"
+   ],
+   "usd": 6433,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1gd8gk9u5n69hg7j7t9vzdrn340cv0dgck6csssme25k23wznaq4qakj9l9",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1rc4ef7s6pzuf9pkg8ymnw29pjz2yfm3tjg0kleu4348c2e6upkxqdfdj5u",
+    "uluna"
+   ],
+   "usd": 6204,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1aerx5j562pvjgw3wfmunv3gg58rrmtwtpt8ugh8m6j8rwlc058fq4ukjya",
+   "dex": "Terraport V3",
+   "assets": [
+    "uluna",
+    "terra1c8465efwtu0vvyldde50meshzsdk7uhxmgyrhl5gmcsp7qaxk42qjmk5uu"
+   ],
+   "usd": 6176,
+   "pair_type": "{\"xyk\": {}}",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra18vfm9x4gezjp608p5dh7373z53lnvp6p5myrheh2rshhgz67vhsqzxrxva",
+   "dex": "luncswap",
+   "assets": [
+    "terra1zmsv8khmsrz2xj8zuhu7r7yruf5dfsyhtqyqf5lf92f2uvz6lf9sx5sr79",
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+   ],
+   "usd": 6020,
+   "pair_type": "null",
+   "existed_at_earliest": false
+  },
+  {
+   "pair": "terra1tafq7l35cjapjk0j70468nfmztm36k73hr3wenrjam7wpk6l6nnqryq4de",
+   "dex": "Terraport V3",
+   "assets": [
+    "terra1v0z94pr8ynzq8zmuyv3j0eraqjs4m5zpm4ptgru459y5fye2at7q0e4jtd",
+    "uluna"
+   ],
+   "usd": 5843,
+   "pair_type": "{\"xyk\": {}}",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1henl6k47mwzldndvp8ywysq7jssjqr06cc63p4g09qp36qv0dukqakkw92",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra12f3f5fzfzxckc0qlv3rmwwkjfhzevpwmx77345n0zuu2678vxf0sm6vvcw",
+    "uusd"
+   ],
+   "usd": 5688,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1f9mjyny7tr8gwqtepxda0wsz8t9csdcg0nnx6s8z746qs5a3t0wq478xcf",
+   "dex": "Terraport V2",
+   "assets": [
+    "terra14mqjm7n23ky3479hmaarzqnwrlmapje08runh5m7a29rz6sunhpsn9pq27",
+    "terra1t9gw5njcx009ud2ke7txq92hx5v75arsctzch9nyxv0096987c4q9fwvzy"
+   ],
+   "usd": 4763,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1l0sny96yzkwx6lyympccasn7xt7jfwkwegrvr48ey9zpypsl0nusvg5sxg",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1genyaw32qah4544m0sfgmchegf7emft77u7hug63cc6a72mvpntsfupzmd",
+    "uluna"
+   ],
+   "usd": 4467,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1u5tl9hf3q5uhtch5xan5rkf0w9awzn0klwffsphupykafm52n6jqr3ns8y",
+   "dex": "Terraport V2",
+   "assets": [
+    "uluna",
+    "terra12j3xuxx52cg045qk37ee4k4u4fsgvyuf8d89dh7c9mr706jvxdascahqej"
+   ],
+   "usd": 4400,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra170zyvj4tchlt5whqelg4873ejljsgnkntpfh9aqe0g8dpdukle5qhefgrt",
+   "dex": "Terraport V3",
+   "assets": [
+    "uluna",
+    "terra1j9tjp5terr8n209ng8ys68rfrs8x76lrycet5rsc55yultyh9gfqeaa4wq"
+   ],
+   "usd": 4130,
+   "pair_type": "{\"xyk\": {}}",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1vsqxkcx7jv0q5newczm9x4lpna7rmcph8h5ay0kww0dvymvqfm9q3439gm",
+   "dex": "Terraport V2",
+   "assets": [
+    "uluna",
+    "terra1le9l8gpwl2f48xluphnwkqrnhwxqt27xhducfzqvncmsh9swavlqjpy7c9"
+   ],
+   "usd": 4123,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1pz3zf7a0jwnly739z02y88njw7at4xg69na693fph4uj7zvpee2qhuygnx",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1f6z0ylpshz9j0ytjcqlmyl3fmf8v7uwa7k7ar6craz247lum3wwq6jwh3u",
+    "uluna"
+   ],
+   "usd": 3951,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1tkqu5dwl4ffp5dxl8yh7f6cqtd69n2a4ulyyv5s49yvs0fj0qmxsx7f8lg",
+   "dex": "Terraport V3",
+   "assets": [
+    "uluna",
+    "terra1peu2e6efadlrvdq70nkkkqx36nzn5ccgtjg5wwd3xry3yzd276dqnep594"
+   ],
+   "usd": 3889,
+   "pair_type": "{\"xyk\": {}}",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra174euun47r0xhwkslza67avnm5r4gtxnckfeeuud39c0ahtu5hryq57vel3",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1ctvrh09s3q2tgxm88vt6zexle8wcf22qwhxe5qa2wchc9e2ynw3qhvksyl",
+    "uluna"
+   ],
+   "usd": 3878,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1423eyp32v3j7here2nu6ftyhc252zxxr7w2kh30ansks8pgfjweq4yjfej",
+   "dex": "Terraport V3",
+   "assets": [
+    "uluna",
+    "terra1xuwhm227h520fx0zse5enze42as3n0sm2xlyctjwnh08m0kvt83ss0rmzw"
+   ],
+   "usd": 3726,
+   "pair_type": "{\"xyk\": {}}",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1p3xuq64hh47hdt0uf0ncy6pzfwplme62nu22vqmv0sk86zwy87uqpl0egn",
+   "dex": "Terraport V2",
+   "assets": [
+    "uusd",
+    "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp"
+   ],
+   "usd": 3597,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1g6627t8f04yr97hjdg65pganrntag2633ll630gqlc8d0svyz5qs8y4rew",
+   "dex": "luncswap",
+   "assets": [
+    "uluna",
+    "terra16hl9mwp67l8xjy8hlhasmzldlmdpw963gmpj6e2em0g7xy4el2ys6kwtlt"
+   ],
+   "usd": 3473,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1l2fn5pqzkm06f8sc4p6j3zmyggmdgsntvee66lykm8ay9xfq8rpqgfpwvn",
+   "dex": "Terraport V2",
+   "assets": [
+    "uluna",
+    "uusd"
+   ],
+   "usd": 3301,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1xu5kwmurh9jlz647ksu77lrd3ylz0hpnjljvkwsscadsxnwwq4yqmnq765",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1x6e64es6yhauhvs3prvpdg2gkqdtfru840wgnhs935x8axr7zxkqzysuxz",
+    "uluna"
+   ],
+   "usd": 3282,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1h4punhthc5dg3gxzmxlu3ejjjl2p335r203qh2gm4gt6qrjnkndshug7xc",
+   "dex": "Terraswap",
+   "assets": [
+    "terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a",
+    "uluna"
+   ],
+   "usd": 3189,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1rwnnrh8sdax7lnctffs30gg4cuwc7rspkz9mvgpdjf58gd008z5sc3stwk",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra19eytmx0yd3m5udlv7rh6u429g6ddjm2cndwv5cxndcymrztx4krqz9p4t6",
+    "uluna"
+   ],
+   "usd": 3144,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1j2ag3rgjnjnp7fwdxs8ugxx73j0prq86e4rgnaj45n5l8l4pr6kqh9aq3d",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1e4lxe4fq6k9652pyu7fyrexsns3r8tlqrdky3z03ky2ptejzdajsh0xvzt",
+    "uluna"
+   ],
+   "usd": 3102,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra16378xgjcjxtzhs37hgu5vc79awxeqazfz6whj5f600dg33m6tyyq02hzd3",
+   "dex": "Terraport V3",
+   "assets": [
+    "uluna",
+    "terra1d06z7c94qu5vuhnk0r3m6dyn75y259uqjjk8mf2kxx4gxmfvnavsnx2uc0"
+   ],
+   "usd": 2898,
+   "pair_type": "{\"xyk\": {}}",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1lv87fcs5hy75aeul0mp66eu6ns63fmz9utsvkxun6p5dzaazzw3qqqyv3l",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1wwrg00jczxf4czy4jr4wc2nvgpl4un4g8fjvm2zy54neel7ygqgsmlhhvp",
+    "uluna"
+   ],
+   "usd": 2891,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1gll3xekkgn0kxu2l6gx6gvlv97ddrs42xzksgyls23gmuhclckys7hthr2",
+   "dex": "luncswap",
+   "assets": [
+    "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp",
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+   ],
+   "usd": 2803,
+   "pair_type": "null",
+   "existed_at_earliest": false
+  },
+  {
+   "pair": "terra13mg8pvsrhutgw06khvq43pcuhra8cwmxqftlfpxscfqlwxt6yxuqdtqp2f",
+   "dex": "Terraport V2",
+   "assets": [
+    "terra1wx48f5g06l9qxw8k4gn3200lmseu85vkgangwyn9xdu66mtfsfxq60hkdt",
+    "uluna"
+   ],
+   "usd": 2795,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1ht0fuwnurs5afln8u36nkjsdy4zcmuv3hnre54rgy2lf9286fxtqsaf4yu",
+   "dex": "Terraport V2",
+   "assets": [
+    "uluna",
+    "terra14rfnhc2aru7jp304lht3yf903necsnrt4cxd464cftsfcksw0rtsgundnt"
+   ],
+   "usd": 2778,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra17tk9v62lgvum67rs2mx98h6kz86m6m7lg5k0gnv407xhgc957z5qsp404w",
+   "dex": "Terraport V2",
+   "assets": [
+    "uluna",
+    "ibc/E1E3674A0E4E1EF9C69646F9AF8D9497173821826074622D831BAB73CCB99A2D"
+   ],
+   "usd": 2550,
+   "pair_type": "null",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1a7vjhp0nf3nnspu6m92asr64zmtjyagwx7anv76yephzuncs980s4gvfsm",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1mm8tdp40r2slzwqxk8jsz66ayc4zp69muxeateq37x2xquttzsaqy7275a",
+    "uluna"
+   ],
+   "usd": 2477,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra12xzuds30s5pjl2rw0cxm5x2pz04l7td9w0za7ns5pdmfjs8ufkrsmjt35h",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1zra7m9w59sxwxqy8lqs3yeqleedrvtgg2qf938nk2wf8pq2ejkqsn0heln",
+    "uluna"
+   ],
+   "usd": 2404,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1zazl8qygr8jnjaf9u60zqmnf0fd8888nyr4p3xuv0mwkuek02puq9m209s",
+   "dex": "Garuda DeFi",
+   "assets": [
+    "terra1vs5xa8jr5ek5shxvqz3zyyvrexfxs0myd7gqhplmz46xldg7k7lscc8fyj",
+    "uluna"
+   ],
+   "usd": 2387,
+   "pair_type": null,
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra10ahm3q2zeftde4fmpurwz4te3m0q2nnw5le5pp5ru5w65862whjspk2yd4",
+   "dex": "Terraport V3",
+   "assets": [
+    "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp",
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+   ],
+   "usd": 2129,
+   "pair_type": "{\"xyk\": {}}",
+   "existed_at_earliest": true
+  },
+  {
+   "pair": "terra1dlffujgmvdl7tuv3car5n9asfvvqsrxkdtrc2afvemexvnuy2wnsrf5uy0",
+   "dex": "Terraport V3",
+   "assets": [
+    "uluna",
+    "uusd"
+   ],
+   "usd": 2073,
+   "pair_type": "{\"custom\": \"concentrated\"}",
+   "existed_at_earliest": true
+  }
+ ]
+}

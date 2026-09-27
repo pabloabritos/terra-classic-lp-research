@@ -1,0 +1,93 @@
+{
+ "pair": "terra10ahm3q2zeftde4fmpurwz4te3m0q2nnw5le5pp5ru5w65862whjspk2yd4",
+ "label": "TERRA/USDC",
+ "assets": [
+  "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp",
+  "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5"
+ ],
+ "checked_swaps": 0,
+ "bad_swaps": 0,
+ "cutoff": null,
+ "cover_days": 139.47788194444445,
+ "lowest_fetched_h": 28501065,
+ "anchors": [
+  [
+   30510000,
+   {
+    "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp": [
+     1782982491726,
+     1782982491726
+    ],
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5": [
+     1051767478,
+     1051767478
+    ]
+   },
+   [
+    42002990743,
+    42002990743
+   ]
+  ],
+  [
+   30470000,
+   {
+    "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp": [
+     1724751586192,
+     1724751586192
+    ],
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5": [
+     1086917370,
+     1086917370
+    ]
+   },
+   [
+    42002990743,
+    42002990743
+   ]
+  ],
+  [
+   30430000,
+   {
+    "terra1ex0hjv3wurhj4wgup4jzlzaqj4av6xqd8le4etml7rg9rs207y4s8cdvrp": [
+     1728327412855,
+     1728327412855
+    ],
+    "ibc/0BB9D8513E8E8E9AE6A9D211D9136E6DA42288DDE6CFAA453A150A4566054DC5": [
+     1084662068,
+     1084662068
+    ]
+   },
+   [
+    42002990743,
+    42002990743
+   ]
+  ]
+ ],
+ "horizons": {
+  "10": {
+   "from": "2026-09-14T02:05:40",
+   "lp_vs_hodl": -0.0007218068533177968,
+   "share_change": 0.0
+  },
+  "30": {
+   "from": "2026-08-25T02:05:40",
+   "lp_vs_hodl": -0.03118367180612369,
+   "share_change": 0.0
+  },
+  "60": {
+   "from": "2026-07-26T02:05:40",
+   "lp_vs_hodl": -0.02997511122244656,
+   "share_change": 0.0
+  },
+  "90": {
+   "from": "2026-06-26T02:05:40",
+   "lp_vs_hodl": -0.06853242182836394,
+   "share_change": 0.0
+  },
+  "120": {
+   "from": "2026-05-27T02:05:40",
+   "lp_vs_hodl": -0.15328398886822825,
+   "share_change": -0.2566984677294013
+  }
+ }
+}
