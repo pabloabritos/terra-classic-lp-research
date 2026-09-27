@@ -74,9 +74,9 @@ footer{font-size:13.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 
 <div class="wrap">
 <header>
-  <div class="meta"><span>Open research</span><span>Data to block 30536384 · 24 Sep 2026 02:05 UTC</span><span>Code and data: <a href="https://github.com/pabloabritos/terra-classic-lp-research">github.com/pabloabritos/terra-classic-lp-research</a></span></div>
+  <div class="meta"><span>Open research · first version, open to review</span><span>Data to block 30536384 · 24 Sep 2026 02:05 UTC</span><span>Code and data: <a href="https://github.com/pabloabritos/terra-classic-lp-research">github.com/pabloabritos/terra-classic-lp-research</a></span></div>
   <h1>Do Terra Classic LPs beat holding?</h1>
-  <p class="lede">We measured every pool with at least $2,000 of liquidity on five Terra Classic DEXes, from every possible start date over 139 days, against simply keeping the same two tokens. This page shows what we found, how we measured it, and how to check it yourself.</p>
+  <p class="lede">We measured every pool with at least $2,000 of liquidity on five Terra Classic DEXes, from every possible start date over 139 days, against simply keeping the same two tokens. This page shows what we found, how we measured it, and how to check it yourself. It is a first measurement, not a final answer: the aim is to improve it together, so corrections, other data and other readings are welcome.</p>
 </header>
 
 <section class="summary" aria-label="Summary">
@@ -322,7 +322,7 @@ $("summary").innerHTML=[
  `<strong>The result depends on the period.</strong> From 30 days back, ${b30.lose} of ${b30.pools} pools are below holding (median ${pct(b30.median)}). From 120 days back, ${b120.lose} of ${b120.pools} (median ${pct(b120.median)}). Across start dates from 30 to 139 days, between ${S.lose_range[0]} and ${S.lose_range[1]} of the ${S.n_full} older pools are below holding; never more than ${S.gain_max} are above. ${S.always_lose} pools are below holding for every one of those start dates.`,
  `<strong>The size of the loss follows the size of the price move.</strong> For constant-product pools the result splits into divergence loss, which depends only on how far the price moved between start and end, and fees kept. Over 120 days, ${S.fees120_under1} of ${S.cp120} such pools kept less than 1% in fees, while price moves of 40–80% cost 3–30%.`,
  `<strong>Fees kept by LPs are small.</strong> Traders pay 0.3% to 2% per swap depending on the DEX, but LPs keep 0.1–0.3%. The rest goes to the DEX or its token holders.`,
- `Everything is reproducible from public chain data. The code, the cached data and suggested prompts for AI agents are further down this page.`
+ `This is a starting point for discussion. Everything is reproducible from public chain data, and we would like others to check it, correct it and extend it. The code, the cached data and suggested prompts for AI agents are further down this page.`
 ].map(s=>`<li>${s}</li>`).join("");
 
 // what we measured
@@ -346,7 +346,7 @@ $("pools-line").innerHTML=`${S.n_pools} pools: `+Object.entries(S.by_dex).map(([
 // chart 2: per-pool dot range, asinh scale
 (function(){
  const rows=[...P].sort((a,b)=>a.median-b.median),W=780,L=210,R=16,T=26,rh=17,H=rows.length*rh,k=0.25,f=v=>Math.asinh(v*100/k);
- const lo=f(-0.32),hi=f(0.03),x=v=>L+(f(v)-lo)/(hi-lo)*(W-L-R);
+ const lo=f(-0.36),hi=f(0.03),x=v=>L+(f(v)-lo)/(hi-lo)*(W-L-R);
  const svg=mk("svg",{viewBox:`0 0 ${W} ${T+H+10}`},$("c-pools")),ax=mk("g",{class:"axis"},svg);
  [-.3,-.1,-.03,-.01,-.003,0,.01].forEach(v=>{mk("line",{x1:x(v),x2:x(v),y1:T-6,y2:T+H,stroke:v===0?"var(--muted)":"var(--rule)"},ax);const t=mk("text",{x:x(v),y:T-10,"text-anchor":"middle"},ax);t.textContent=v===0?"0":(v>0?"+":"−")+Math.abs(v*100)+"%"});
  rows.forEach((p,i)=>{const cy=T+i*rh+rh/2,c=p.median<-FL?"var(--loss)":p.median>FL?"var(--gain)":"var(--flat)";
