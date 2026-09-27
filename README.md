@@ -5,7 +5,7 @@ with simply holding the same two tokens. Everything here is computed from on-cha
 the data and the method are public so that anyone can check the results, rerun them on other pools or
 other dates, and tell us where we are wrong.
 
-The written report is [`report/index.html`](report/index.html) (built from `report/template.html` by `report/build.py`). This README explains how to reproduce it. If you are an AI agent, or about to hand this to one, see [`AGENTS.md`](AGENTS.md); the report also has suggested prompts.
+**Read the report:** https://pabloabritos.github.io/terra-classic-lp-research/ (the same page is in [`docs/index.html`](docs/index.html); it is built from `report/template.html` by `report/build.py`, which also writes `report/index.html`, the version used for the Claude artifact). This README explains how to reproduce it. If you are an AI agent, or about to hand this to one, see [`AGENTS.md`](AGENTS.md); the report also has suggested prompts.
 
 ## The question
 

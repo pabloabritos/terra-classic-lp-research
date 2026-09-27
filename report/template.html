@@ -309,6 +309,8 @@ const $=id=>document.getElementById(id);
 function mk(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
 const tip=$("tip");
 function bind(el,html){el.addEventListener("mouseenter",e=>{tip.innerHTML=html;tip.hidden=false;mv(e)});el.addEventListener("mousemove",mv);el.addEventListener("mouseleave",()=>tip.hidden=true)}
+// touch screens have no hover: a tap shows the tooltip, a tap anywhere else hides it
+document.addEventListener("touchstart",e=>{if(!e.target.closest||!e.target.closest("svg"))tip.hidden=true},{passive:true});
 function mv(e){let x=e.clientX+14,y=e.clientY+14;const w=tip.offsetWidth,h=tip.offsetHeight;if(x+w>innerWidth-8)x=e.clientX-w-14;if(y+h>innerHeight-8)y=e.clientY-h-14;tip.style.left=x+"px";tip.style.top=y+"px"}
 const B=D.by_day, day=d=>B[d]||B[String(d)];
 const date=d=>{const t=new Date(Date.UTC(2026,8,24,2,5)-d*86400000);return t.toLocaleDateString("en-GB",{day:"numeric",month:"short",timeZone:"UTC"})};

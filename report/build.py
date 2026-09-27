@@ -1,4 +1,5 @@
-"""Builds report/index.html from report/template.html and the analysis outputs.
+"""Builds report/index.html (for the Claude artifact) and docs/index.html (standalone, for GitHub Pages)
+from report/template.html and the analysis outputs.
 Every number the page shows comes from ../analysis/*.json; run the analysis first, then:
     cd report && python3 build.py"""
 import json, os, statistics
@@ -44,5 +45,16 @@ stats = {
 }
 data = {"pools": pools, "by_day": by_day, "lvr": LV, "lvr_excluded": load("lvr_120_excluded.json"), "dao": DP, "stats": stats, "flat": R["flat_threshold"]}
 tpl = open("template.html").read()
-open("index.html", "w").write(tpl.replace("/*__DATA__*/null", json.dumps(data, separators=(",", ":"))))
+page = tpl.replace("/*__DATA__*/null", json.dumps(data, separators=(",", ":")))
+# report/index.html: page body only (the Claude artifact host adds the document skeleton)
+open("index.html", "w").write(page)
+# docs/index.html: standalone document for GitHub Pages or any web server
+head = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
+        '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
+        '<style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n')
+title_end = page.index("</title>") + len("</title>")
+os.makedirs(os.path.join("..", "docs"), exist_ok=True)
+open(os.path.join("..", "docs", "index.html"), "w").write(
+    head + page[:title_end] + "\n" + page[title_end:page.index("<div class=\"wrap\">")] + "</head>\n<body>\n"
+    + page[page.index("<div class=\"wrap\">"):] + "\n</body>\n</html>\n")
 print(json.dumps(stats, indent=1))
