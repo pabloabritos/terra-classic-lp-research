@@ -306,6 +306,8 @@ const pct=(v,d=2)=>v==null?"–":(v>0?"+":v<0?"−":"")+Math.abs(v*100).toFixed(
 const cls=v=>v==null?"dim":v<-FL?"neg":v>FL?"pos":"dim";
 const fmt$=v=>"$"+Math.round(v).toLocaleString("en-US");
 const $=id=>document.getElementById(id);
+// token symbols come from the chain and anyone can set them: escape before inserting as HTML
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function mk(t,a,p){const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e}
 const tip=$("tip");
 function bind(el,html){el.addEventListener("mouseenter",e=>{tip.innerHTML=html;tip.hidden=false;mv(e)});el.addEventListener("mousemove",mv);el.addEventListener("mouseleave",()=>tip.hidden=true)}
@@ -356,9 +358,9 @@ $("pools-line").innerHTML=`${S.n_pools} pools: `+Object.entries(S.by_dex).map(([
   mk("line",{x1:x(p.min),x2:x(p.max),y1:cy,y2:cy,stroke:c,"stroke-width":3,"stroke-linecap":"round","stroke-opacity":.45},svg);
   mk("circle",{cx:x(p.median),cy,r:4.5,fill:c},svg);
   const hit=mk("rect",{x:0,y:cy-rh/2,width:W,height:rh,fill:"transparent"},svg);
-  bind(hit,`<strong>${p.label}</strong> · ${p.dex}<br>${fmt$(p.usd)} liquidity<br>Median ${pct(p.median)} (range ${pct(p.min)} to ${pct(p.max)})<br>Below holding on ${Math.round(p.neg*100)}% of start dates${p.d120!=null?`<br>120 days: ${pct(p.d120)}`:""}`)});
+  bind(hit,`<strong>${esc(p.label)}</strong> · ${p.dex}<br>${fmt$(p.usd)} liquidity<br>Median ${pct(p.median)} (range ${pct(p.min)} to ${pct(p.max)})<br>Below holding on ${Math.round(p.neg*100)}% of start dates${p.d120!=null?`<br>120 days: ${pct(p.d120)}`:""}`)});
  const t=$("t-pools");t.innerHTML=`<thead><tr><th>Pool</th><th>DEX</th><th class="r">Liquidity</th><th class="r">30d</th><th class="r">60d</th><th class="r">90d</th><th class="r">120d</th><th class="r">Median</th><th class="r">Below on</th></tr></thead><tbody>`+
-  rows.map(p=>`<tr><td>${p.label}</td><td>${p.dex}${p.type==="concentrated"?" (conc.)":""}</td><td class="r num">${fmt$(p.usd)}</td>`+["d30","d60","d90","d120","median"].map(k=>`<td class="r num ${cls(p[k])}">${pct(p[k])}</td>`).join("")+`<td class="r num">${Math.round(p.neg*100)}%</td></tr>`).join("")+"</tbody>";
+  rows.map(p=>`<tr><td>${esc(p.label)}</td><td>${p.dex}${p.type==="concentrated"?" (conc.)":""}</td><td class="r num">${fmt$(p.usd)}</td>`+["d30","d60","d90","d120","median"].map(k=>`<td class="r num ${cls(p[k])}">${pct(p[k])}</td>`).join("")+`<td class="r num">${Math.round(p.neg*100)}%</td></tr>`).join("")+"</tbody>";
 })();
 
 // chart 3: scatter vs price move
@@ -373,13 +375,13 @@ $("pools-line").innerHTML=`${S.n_pools} pools: `+Object.entries(S.by_dex).map(([
  let d="",pen=false;for(let i=0;i<=400;i++){const r=Math.exp(xmin+(xmax-xmin)*i/400),il=2*Math.sqrt(r)/(1+r)-1;if(il<ymin){pen=false;continue}d+=(pen?"L":"M")+x(r-1).toFixed(1)+","+y(il).toFixed(1);pen=true}
  mk("path",{d,fill:"none",stroke:"var(--curve)","stroke-width":1.6},svg);
  pts.forEach(p=>{const c=mk("circle",{cx:x(p.move120),cy:y(Math.max(p.d120,ymin)),r:5,fill:"var(--accent)","fill-opacity":.8,stroke:"var(--paper)","stroke-width":1},svg);
-  bind(c,`<strong>${p.label}</strong> · ${p.dex}<br>Price move ${pct(p.move120,0)}<br>Divergence loss ${pct(p.il120)}<br>Fees kept ${pct(p.fees120)}<br>LP vs HODL ${pct(p.d120)}`)});
- $("fees-line").innerHTML=`Over the 120 days, ${S.fees120_under1} of the ${S.cp120} constant-product pools kept less than 1% in fees; the most was ${pct(S.fees120_max)} (${S.fees120_max_pool}). LUNC's price in the Terraswap LUNC/USDC pool fell ${pct(lunc.move120,1)} over the same period, a move whose divergence loss alone is ${pct(lunc.il120)}. The points sit just above the curve: fees move each pool up a little, and the price move decides most of the result.`;
+  bind(c,`<strong>${esc(p.label)}</strong> · ${p.dex}<br>Price move ${pct(p.move120,0)}<br>Divergence loss ${pct(p.il120)}<br>Fees kept ${pct(p.fees120)}<br>LP vs HODL ${pct(p.d120)}`)});
+ $("fees-line").innerHTML=`Over the 120 days, ${S.fees120_under1} of the ${S.cp120} constant-product pools kept less than 1% in fees; the most was ${pct(S.fees120_max)} (${esc(S.fees120_max_pool)}). LUNC's price in the Terraswap LUNC/USDC pool fell ${pct(lunc.move120,1)} over the same period, a move whose divergence loss alone is ${pct(lunc.il120)}. The points sit just above the curve: fees move each pool up a little, and the price move decides most of the result.`;
 })();
 
 // chart 4: break-even dumbbell
 (function(){
- const all=D.lvr, act=all.filter(r=>r.turnover_day>=0.005).sort((a,b)=>b.breakeven_turnover_day/b.turnover_day-a.breakeven_turnover_day/a.turnover_day);
+ const all=D.lvr, act=all.filter(r=>r.turnover_day>=0.005&&r.breakeven_turnover_day!=null).sort((a,b)=>b.breakeven_turnover_day/b.turnover_day-a.breakeven_turnover_day/a.turnover_day);
  const W=780,L=240,R=16,T=26,rh=22,H=act.length*rh,lmin=Math.log(.002),lmax=Math.log(1),x=v=>L+(Math.log(Math.max(v,.002))-lmin)/(lmax-lmin)*(W-L-R);
  const svg=mk("svg",{viewBox:`0 0 ${W} ${T+H+10}`},$("c-lvr")),ax=mk("g",{class:"axis"},svg);
  [.002,.005,.01,.02,.05,.1,.2,.5,1].forEach(v=>{mk("line",{x1:x(v),x2:x(v),y1:T-6,y2:T+H,stroke:"var(--rule)"},ax);const t=mk("text",{x:x(v),y:T-10,"text-anchor":"middle"},ax);t.textContent=(v*100)+"%"});
@@ -387,13 +389,13 @@ $("pools-line").innerHTML=`${S.n_pools} pools: `+Object.entries(S.by_dex).map(([
   mk("line",{x1:x(r.turnover_day),x2:x(r.breakeven_turnover_day),y1:cy,y2:cy,stroke:"var(--muted)","stroke-width":2},svg);
   mk("circle",{cx:x(r.breakeven_turnover_day),cy,r:5.5,fill:"var(--loss)"},svg);mk("circle",{cx:x(r.turnover_day),cy,r:5.5,fill:"var(--gain)"},svg);
   const hit=mk("rect",{x:0,y:cy-rh/2,width:W,height:rh,fill:"transparent"},svg);
-  bind(hit,`<strong>${r.pool}</strong><br>Volatility ${Math.round(r.sigma_year*100)}% a year<br>Actual volume ${(r.turnover_day*100).toFixed(1)}% of liquidity a day<br>Needed ${(r.breakeven_turnover_day*100).toFixed(1)}%<br>LP keeps ${(r.lp_fee_rate*100).toFixed(2)}% per unit of volume`)});
- const ok=all.filter(r=>r.turnover_day>=r.breakeven_turnover_day&&r.turnover_day>=0.005);
+  bind(hit,`<strong>${esc(r.pool)}</strong><br>Volatility ${Math.round(r.sigma_year*100)}% a year<br>Actual volume ${(r.turnover_day*100).toFixed(1)}% of liquidity a day<br>Needed ${(r.breakeven_turnover_day*100).toFixed(1)}%<br>LP keeps ${(r.lp_fee_rate*100).toFixed(2)}% per unit of volume`)});
+ const ok=all.filter(r=>r.breakeven_turnover_day!=null&&r.turnover_day>=r.breakeven_turnover_day&&r.turnover_day>=0.005);
  $("lvr-cap").textContent=`Log scale. ${act.length} constant-product pools that traded at least 0.5% of their liquidity a day on average; the full list is in the table below. Volatility is the daily volatility of the pool's own price, averaged over all 24 possible hours at which to cut the day (the choice of hour moves it by up to ±15%). The σ²/8 rate ignores that arbitrage only pays when the price gap exceeds the fee, so the "needed" values are an upper estimate, most of all on Terraport V2 where traders pay 2%.`;
- $("lvr-line").innerHTML=`Only ${ok.length===1?"one pool":ok.length+" pools"} traded more than it needed: ${ok.map(r=>r.pool).join(", ")}. The widest gap between theory and result is JURIS/LUNC on Terraport V2: by its volatility it would need ${(all.find(r=>r.pool.startsWith("JURIS/LUNC")).breakeven_turnover_day*100).toFixed(0)}% of its liquidity traded a day, yet it is one of the few pools above holding over 120 days. Its net price move over the window was small. This is one observation and we do not have a tested explanation for it.`;
+ $("lvr-line").innerHTML=`Only ${ok.length===1?"one pool":ok.length+" pools"} traded more than it needed: ${ok.map(r=>esc(r.pool)).join(", ")}. The widest gap between theory and result is JURIS/LUNC on Terraport V2: by its volatility it would need ${(all.find(r=>r.pool.startsWith("JURIS/LUNC")).breakeven_turnover_day*100).toFixed(0)}% of its liquidity traded a day, yet it is one of the few pools above holding over 120 days. Its net price move over the window was small. This is one observation and we do not have a tested explanation for it.`;
  $("t-lvr").innerHTML=`<thead><tr><th>Pool</th><th class="r">Days</th><th class="r">Volatility / yr</th><th class="r">Fees kept</th><th class="r">σ²/8 cost</th><th class="r">Volume / day</th><th class="r">Needed / day</th></tr></thead><tbody>`+
-  all.map(r=>`<tr><td>${r.pool}</td><td class="r num">${Math.round(r.days)}</td><td class="r num">${Math.round(r.sigma_year*100)}%</td><td class="r num">${pct(r.fees)}</td><td class="r num neg">${pct(-r.lvr)}</td><td class="r num">${(r.turnover_day*100).toFixed(2)}%</td><td class="r num">${(r.breakeven_turnover_day*100).toFixed(2)}%</td></tr>`).join("")+"</tbody>";
- $("lvr-excl").innerHTML=`Pools are included only if rebuilding their history transaction by transaction lands on the real archive state at the start of the window, to within one part in a million. ${D.lvr_excluded.length} constant-product pools did not and are left out of this test (not of the results above): ${D.lvr_excluded.join(", ")}. Their tx history does not fully explain their state, for example because a token changes balances on transfer or because tokens reached the pool without going through its contract.`;
+  all.map(r=>`<tr><td>${esc(r.pool)}</td><td class="r num">${Math.round(r.days)}</td><td class="r num">${Math.round(r.sigma_year*100)}%</td><td class="r num">${pct(r.fees)}</td><td class="r num neg">${pct(-r.lvr)}</td><td class="r num">${(r.turnover_day*100).toFixed(2)}%</td><td class="r num">${r.breakeven_turnover_day==null?"n/a":(r.breakeven_turnover_day*100).toFixed(2)+"%"}</td></tr>`).join("")+"</tbody>";
+ $("lvr-excl").innerHTML=`Pools are included only if rebuilding their history transaction by transaction lands on the real archive state at the start of the window, to within one part in a million. ${D.lvr_excluded.length} constant-product pools did not and are left out of this test (not of the results above): ${D.lvr_excluded.map(esc).join(", ")}. Their tx history does not fully explain their state, for example because a token changes balances on transfer or because tokens reached the pool without going through its contract.`;
 })();
 
 // governance table

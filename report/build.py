@@ -23,19 +23,23 @@ for p in R["pools"]:
                   "series": p["series"]})
 
 by_day = {int(d): v for d, v in R["by_start_day"].items()}
+last = max(by_day)
+full_n = by_day[last]["pools"]  # pools that existed at the earliest start date
+cohort = [v for d, v in by_day.items() if 30 <= d <= last and v["pools"] == full_n]
+med = [p for p in pools if p["median"] is not None]
 cp120 = [p for p in pools if p["fees120"] is not None]
 stats = {
     "n_pools": len(pools),
-    "n_full": sum(1 for p in pools if p["d120"] is not None),
+    "n_full": full_n,
     "by_dex": {d: sum(1 for p in pools if p["dex"] == d) for d in sorted({p["dex"] for p in pools})},
     "usd_total": sum(p["usd"] for p in pools),
-    "lose_range": [min(v["lose"] for d, v in by_day.items() if 30 <= d <= 139 and v["pools"] == 44),
-                   max(v["lose"] for d, v in by_day.items() if 30 <= d <= 139 and v["pools"] == 44)],
-    "lose_median": statistics.median(v["lose"] for d, v in by_day.items() if 30 <= d <= 139 and v["pools"] == 44),
-    "gain_max": max(v["gain"] for d, v in by_day.items() if 30 <= d <= 139 and v["pools"] == 44),
-    "per_pool": {"lose": sum(1 for p in pools if p["median"] < -R["flat_threshold"]),
-                 "flat": sum(1 for p in pools if abs(p["median"]) <= R["flat_threshold"]),
-                 "gain": sum(1 for p in pools if p["median"] > R["flat_threshold"])},
+    "lose_range": [min(v["lose"] for v in cohort), max(v["lose"] for v in cohort)],
+    "lose_median": statistics.median(v["lose"] for v in cohort),
+    "gain_max": max(v["gain"] for v in cohort),
+    "per_pool": {"lose": sum(1 for p in med if p["median"] < -R["flat_threshold"]),
+                 "flat": sum(1 for p in med if abs(p["median"]) <= R["flat_threshold"]),
+                 "gain": sum(1 for p in med if p["median"] > R["flat_threshold"]),
+                 "no_median": len(pools) - len(med)},
     "always_lose": sum(1 for p in pools if p["neg"] == 1.0),
     "cp120": len(cp120),
     "fees120_under1": sum(1 for p in cp120 if p["fees120"] < 0.01),
@@ -45,7 +49,9 @@ stats = {
 }
 data = {"pools": pools, "by_day": by_day, "lvr": LV, "lvr_excluded": load("lvr_120_excluded.json"), "dao": DP, "stats": stats, "flat": R["flat_threshold"]}
 tpl = open("template.html").read()
-page = tpl.replace("/*__DATA__*/null", json.dumps(data, separators=(",", ":")))
+# token symbols are chosen by whoever creates a token: escape "<" so no value can close the <script> tag
+payload = json.dumps(data, separators=(",", ":")).replace("<", "\\u003c")
+page = tpl.replace("/*__DATA__*/null", payload)
 # report/index.html: page body only (the Claude artifact host adds the document skeleton)
 open("index.html", "w").write(page)
 # docs/index.html: standalone document for GitHub Pages or any web server
