@@ -8,7 +8,9 @@ import json, base64, urllib.request, urllib.parse
 
 L = "https://lcd.terra-classic.hexxagon.io"
 H = {"User-Agent": "curl/8.0"}
-RPCS = ["http://67.213.123.159:26657", "http://135.181.79.188:26657", "http://131.153.242.219:26657"]
+# Stakely serves HTTPS; the other three only plain HTTP and are kept as fallbacks
+RPCS = ["https://terraclassic-rpc-server-01.stakely.io", "http://67.213.123.159:26657", "http://135.181.79.188:26657",
+        "http://131.153.242.219:26657"]
 DAO = "terra132qeqedz0yztuztj0rjav4rzlkashpsdxsmh64jpgp2ul0wdlkzquzvln6"
 POOLS = {"Terraswap": "terra19h62lw77rluxf6yg4szcclcgk9tsalx72cv7dlzvzs8gy20g70js7c9jkc",
          "Terraport V3": "terra1a29fltd5h5y8se0xanw48wkmqg7nfpmv5jsl472uun0274h8xatqd3yzfh",
@@ -59,8 +61,8 @@ while True:
     if sa is not None:
         q["list_proposals"]["start_after"] = sa
     d = smart(M, q)
-    if "_err" in d:
-        print(d["_err"]); break
+    if "_err" in d:  # never write a partial proposal list
+        raise RuntimeError(f"list_proposals failed after {len(props)} proposals: {d['_err']}")
     ps = d.get("proposals", []); props += ps
     if len(ps) < 30:
         break

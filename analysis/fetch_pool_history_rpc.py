@@ -25,7 +25,7 @@ def main(pair,new_h,days,out,start=0):
     res={"pair":pair,"new_h":new_h,"windows":[],"txs":[],"source":"rpc tx_search"}
     seen=set(); hi=new_h+1; t_hi=htime(new_h,start)
     for w in range(int(days)):
-        lo=hi-WIN; t_lo=htime(lo,start); page=1; n=0; total=None
+        lo=hi-WIN; t_lo=htime(lo,start); page=1; n=0; failed=0; total=None
         while True:
             q=f"\"wasm._contract_address='{pair}' AND tx.height>={lo} AND tx.height<{hi}\""
             r=get("/tx_search?"+urllib.parse.urlencode({"query":q,"per_page":"100","page":str(page),"order_by":"\"desc\""}),start)
@@ -33,7 +33,7 @@ def main(pair,new_h,days,out,start=0):
             for t in r["txs"]:
                 if t["hash"] in seen: continue
                 seen.add(t["hash"])
-                if t["tx_result"].get("code",0)!=0: continue
+                if t["tx_result"].get("code",0)!=0: failed+=1; continue
                 h=int(t["height"])
                 ts=t_lo+(t_hi-t_lo)*(h-lo)/(hi-lo)
                 c=compact({"height":h,"timestamp":datetime.fromtimestamp(ts,timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -41,6 +41,8 @@ def main(pair,new_h,days,out,start=0):
                 res["txs"].append(c); n+=1
             if page*100>=total: break
             page+=1
+        if n+failed!=total:  # pagination lost or duplicated txs: never store an incomplete window
+            raise RuntimeError(f"{pair} window {lo}-{hi}: node reports {total} txs, got {n} ok + {failed} failed")
         res["windows"].append([lo,hi,total]); hi=lo; t_hi=t_lo
         if w%10==0:
             print(pair[:12],"window",w,"txs so far",len(res["txs"]),flush=True); json.dump(res,open(out,"w"))

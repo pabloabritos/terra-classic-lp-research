@@ -29,7 +29,9 @@ def save():
         disk.update(CACHE)
         CACHE.update(disk)
         tmp = f"{CACHE_FILE}.{os.getpid()}.tmp"
-        json.dump(disk, open(tmp, "w"), sort_keys=True)
+        with open(tmp, "w") as fh:
+            json.dump(disk, fh, sort_keys=True)
+            fh.flush(); os.fsync(fh.fileno())
         os.replace(tmp, CACHE_FILE)
 
 
