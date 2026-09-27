@@ -1,6 +1,0 @@
-audit-round1/
-__pycache__/
-*.pyc
-*.log
-*.tmp
-.DS_Store
